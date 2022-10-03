@@ -2,10 +2,12 @@
   "name": "intro-to-typescript",
   "version": "1.0.0",
   "description": "![](./images/TS_LOGO.png)",
-  "main": "index.js",
+  "main": "example.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node ./dist/example.js",
+    "dev": "nodemon"
 
   },
   "repository": {
