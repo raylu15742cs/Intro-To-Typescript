@@ -168,4 +168,6 @@ console.log(sortedNames)
 
 // Type Assertions
 
+// const x = "hello" as unknown as number ;
+
 // @ts-ignore / @ts-nocheck
