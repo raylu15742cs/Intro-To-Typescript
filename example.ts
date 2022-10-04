@@ -108,29 +108,29 @@
 
 // Classes
 
-// class Person {
-//     name: string;
-//     dogName: string;
-//     favNumber: number;
-
-//     constructor(name: string, dogName: string, favNumber: number) {
-//         this.name = name;
-//         this.dogName = dogName;
-//         this.favNumber = favNumber;
-//     }
-// }
-
 class Person {
-    static species = "Homosapean"
-    constructor(
-        public name: string,
-        public dogName: string,
-        public favNumber: number,
-        protected internalSecret : string,
-        private privateSecret: string,
-    ) {}
+    name: string;
+    dogName: string;
+    favNumber: number;
+
+    constructor(name: string, dogName: string, favNumber: number) {
+        this.name = name;
+        this.dogName = dogName;
+        this.favNumber = favNumber;
+    }
 }
-const cj = new Person ("CJ" , "Panzer" , 42, "supersecret" , "supersupersecret");
+
+// class Person {
+//     static species = "Homosapean"
+//     constructor(
+//         public name: string,
+//         public dogName: string,
+//         public favNumber: number,
+//         protected internalSecret : string,
+//         private privateSecret: string,
+//     ) {}
+// }
+const cj = new Person ("CJ" , "Panzer" , 42);
 
 console.log(cj)
 
