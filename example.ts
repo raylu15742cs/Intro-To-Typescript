@@ -164,6 +164,18 @@ const sortedNames = sortItems<string>(
 )
 
 console.log(sortedNames)
+
+function printAll(strs: string | string[] | null) {
+  if (typeof strs === "object" && strs != null) {
+    for (const s of strs) {
+      console.log(s);
+    }
+  } else if (typeof strs === "string") {
+    console.log(strs);
+  } else {
+    // do nothing
+  }
+}
 // any, unknown, never
 
 // Type Assertions
